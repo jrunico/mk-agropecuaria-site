@@ -1,0 +1,142 @@
+{
+  "theme": "light",
+  "archetype": "Organic & Earthy",
+  "design_philosophy": "Warm, inclusive, and trustworthy. The design should feel natural, reflecting both pet care and agriculture with earthy tones, generous spacing, and soft edges. Avoid clinical or tech-heavy aesthetics.",
+  "colors": {
+    "background": "#F7F4EB",
+    "surface": "#FFFFFF",
+    "surface_muted": "#E5EAE3",
+    "primary": "#2E4A35",
+    "primary_hover": "#243B2A",
+    "accent": "#C37353",
+    "accent_hover": "#A86347",
+    "text_primary": "#1A291E",
+    "text_secondary": "#4A5D4E",
+    "border": "#D1D8CE",
+    "success": "#25D366"
+  },
+  "typography": {
+    "font_families": {
+      "heading": "Cabinet Grotesk, sans-serif",
+      "body": "Manrope, sans-serif"
+    },
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-none",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight",
+      "h3": "text-xl sm:text-2xl",
+      "h4": "text-lg sm:text-xl",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm uppercase tracking-[0.2em]"
+    },
+    "pairing_rules": "Headlines use Cabinet Grotesk with tight tracking. Body text uses Manrope with relaxed line height. Overlines should be uppercase, small, and widely spaced."
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-4 sm:px-6 lg:px-12",
+    "section_spacing": "py-20 lg:py-32",
+    "grid_system": "Bento Grid style for services. Use wide gaps (gap-8 to gap-12). Leave negative space. Never center everything.",
+    "border_radius": "rounded-2xl for main cards, rounded-full for buttons."
+  },
+  "surfaces_and_shadows": {
+    "cards": "Flat background (surface_muted or surface), 1px subtle border (#D1D8CE). Hover: -translate-y-1, shadow-lg, border-primary/30.",
+    "header": "Crystal Glassmorphism: bg-[#F7F4EB]/80 backdrop-blur-xl border-b border-[#1A291E]/5 shadow-sm. Z-index 50.",
+    "whatsapp_button": "Fixed bottom-right, z-50, shadow-2xl, pulse animation on hover."
+  },
+  "motion_and_interaction": {
+    "hover_states": "All interactive elements must change background and text color on hover.",
+    "transitions": "Use 'transition: transform 0.2s ease, opacity 0.2s ease'."
+  },
+  "components": {
+    "buttons": "Primary buttons: bg-accent text-white hover:bg-accent_hover. Secondary: border-2 border-primary text-primary hover:bg-primary hover:text-white. Always rounded-full px-8 py-3.",
+    "forms": "Use Shadcn customized. Soft borders, bg-surface focus:ring-2 focus:ring-accent focus:border-transparent.",
+    "reviews_carousel": "Card-based, horizontal scroll or bento grid. Include star icons.",
+    "data_testid": "MANDATORY. E.g., data-testid='contact-form-submit', data-testid='whatsapp-fab'."
+  },
+  "icons": {
+    "library": "lucide-react",
+    "usage": "Use warm, rounded icons (e.g. PawPrint, Leaf, Star, Heart, MapPin)."
+  },
+  "content_requirements": {
+    "business_info": {
+      "name": "Mk Agropecuária e Pet Shop",
+      "address": "R. Bento Ribeiro, 1177 - sala 2 - Nova Rússia, Ponta Grossa - PR, 84070-350",
+      "hours": "Aberto · Fecha 19:00",
+      "phone": "(42) 99946-2309",
+      "rating": "4.8",
+      "review_count": "80 avaliações"
+    },
+    "features": [
+      "Empresa que acolhe a comunidade LGBTQ+",
+      "Empresa de empreendedoras"
+    ],
+    "services": [
+      "Banho e tosa",
+      "Produtos pet (ração, brinquedos)",
+      "Produtos agropecuários",
+      "Compras na loja",
+      "Retirada na loja",
+      "Entrega"
+    ],
+    "reviews": [
+      {
+        "name": "Camylla Rodrigues",
+        "role": "Local Guide",
+        "text": "Ótimo atendimento, tratamento muito bom com minha cachorrinha"
+      },
+      {
+        "name": "Rubia Nara Knapp",
+        "role": "Local Guide",
+        "text": "Produtos de extrema qualidade, confio de olhos fechados"
+      },
+      {
+        "name": "Isabela Dzulinski",
+        "role": "Local Guide",
+        "text": "Adoro os preços também, sou cliente fiel!"
+      }
+    ],
+    "pages": [
+      "Home",
+      "Serviços",
+      "Produtos",
+      "Sobre",
+      "Contato"
+    ]
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1618133401223-30ec212193fb",
+      "alt": "Pet shop interior with a dog on table",
+      "category": "hero",
+      "overlay": "bg-gradient-to-r from-[#2E4A35]/80 via-[#2E4A35]/50 to-transparent"
+    },
+    "service_banho": {
+      "url": "https://images.pexels.com/photos/1436139/pexels-photo-1436139.jpeg",
+      "alt": "Cute wet puppy in bathtub",
+      "category": "services"
+    },
+    "service_pet": {
+      "url": "https://images.pexels.com/photos/796584/pexels-photo-796584.jpeg",
+      "alt": "Vibrant pet shop scene with supplies",
+      "category": "services"
+    },
+    "service_agro": {
+      "url": "https://images.pexels.com/photos/27791586/pexels-photo-27791586.jpeg",
+      "alt": "Agriculture machinery in golden field",
+      "category": "services"
+    },
+    "about_image": {
+      "url": "https://images.pexels.com/photos/8489037/pexels-photo-8489037.jpeg",
+      "alt": "Woman smiling at desk with dog",
+      "category": "about"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Build a multi-page marketing site architecture (either React Router or scrollable single-page with clear section IDs acting as pages).",
+    "Ensure all copy is in Portuguese (Brazilian).",
+    "Use Tailwind CSS for styling, adhering strictly to the color hex codes provided.",
+    "Implement the floating WhatsApp button using the brand's phone number.",
+    "Add 'data-testid' to all interactive elements (buttons, links, form inputs).",
+    "Use purely Shadcn UI for forms, customizing to remove default generic aesthetics (no Inter font, no default gray borders).",
+    "In the 'Sobre' (About) section, explicitly highlight that it's an LGBTQ+ friendly and women-led business using warm, welcoming storytelling.",
+    "Display the Google 4.8-star rating prominently in the Hero and Testimonial sections."
+  ]
+}
