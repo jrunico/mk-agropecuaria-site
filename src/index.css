@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Manrope:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --mk-bg: #F7F4EB;
+    --mk-surface: #FFFFFF;
+    --mk-surface-muted: #E5EAE3;
+    --mk-primary: #2E4A35;
+    --mk-primary-hover: #243B2A;
+    --mk-accent: #C37353;
+    --mk-accent-hover: #A86347;
+    --mk-text-primary: #1A291E;
+    --mk-text-secondary: #4A5D4E;
+    --mk-border: #D1D8CE;
+    --mk-success: #25D366;
+}
+
+body {
+    margin: 0;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--mk-bg);
+    color: var(--mk-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+@layer base {
+    :root {
+        --background: 43 38% 94%;
+        --foreground: 138 22% 13%;
+        --card: 0 0% 100%;
+        --card-foreground: 138 22% 13%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 138 22% 13%;
+        --primary: 134 24% 24%;
+        --primary-foreground: 43 38% 94%;
+        --secondary: 109 10% 90%;
+        --secondary-foreground: 138 22% 13%;
+        --muted: 109 10% 90%;
+        --muted-foreground: 134 10% 33%;
+        --accent: 19 48% 55%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 96 12% 83%;
+        --input: 96 12% 83%;
+        --ring: 19 48% 55%;
+        --radius: 1rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+/* Utilities */
+.mk-container { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-12; }
+
+.mk-overline {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    font-weight: 600;
+    color: var(--mk-accent);
+}
+
+.mk-btn-primary {
+    background-color: var(--mk-accent);
+    color: #fff;
+    border-radius: 9999px;
+    padding: 0.875rem 1.75rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.mk-btn-primary:hover {
+    background-color: var(--mk-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px -12px rgba(195, 115, 83, 0.55);
+}
+
+.mk-btn-secondary {
+    background-color: transparent;
+    color: var(--mk-primary);
+    border: 2px solid var(--mk-primary);
+    border-radius: 9999px;
+    padding: 0.75rem 1.75rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.mk-btn-secondary:hover {
+    background-color: var(--mk-primary);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.mk-card {
+    background-color: var(--mk-surface);
+    border: 1px solid var(--mk-border);
+    border-radius: 1.25rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.mk-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -24px rgba(26, 41, 30, 0.18);
+    border-color: rgba(46, 74, 53, 0.3);
+}
+
+/* Subtle grain */
+.mk-grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(26, 41, 30, 0.06) 1px, transparent 1px);
+    background-size: 4px 4px;
+    opacity: 0.35;
+    mix-blend-mode: multiply;
+}
+
+/* Staggered fade-in */
+@keyframes mkFadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.mk-fade-up { animation: mkFadeUp 0.7s ease both; }
+.mk-d-1 { animation-delay: 0.08s; }
+.mk-d-2 { animation-delay: 0.16s; }
+.mk-d-3 { animation-delay: 0.24s; }
+.mk-d-4 { animation-delay: 0.32s; }
+.mk-d-5 { animation-delay: 0.4s; }
+
+/* WhatsApp pulse */
+@keyframes mkPulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+    70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+.mk-pulse { animation: mkPulse 2.2s infinite; }
+
+::selection {
+    background: var(--mk-primary);
+    color: var(--mk-bg);
+}
+
+@layer base {
+    [data-debug-wrapper="true"] { display: contents !important; }
+}
