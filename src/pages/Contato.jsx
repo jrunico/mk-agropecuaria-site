@@ -106,7 +106,7 @@ const Contato = () => {
                 </div>
                 <div>
                   <div className="mk-overline" style={{ fontSize: "0.7rem" }}>Redes sociais</div>
-                  <a href={BUSINESS.instagram} target="_blank" rel="noreferrer" className="font-semibold mt-1 block hover:text-[#C37353]">@mkagropet</a>
+                  <a href={BUSINESS.instagram} target="_blank" rel="noreferrer" className="font-semibold mt-1 block hover:text-[#C37353]">@mkagropecuaria</a>
                 </div>
               </div>
             </div>

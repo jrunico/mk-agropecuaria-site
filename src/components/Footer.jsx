@@ -66,7 +66,7 @@ export const Footer = () => {
             className="inline-flex items-center gap-2 text-sm font-medium hover:text-[#C37353] transition"
             data-testid="footer-instagram"
           >
-            <Instagram size={16} /> @mkagropet
+            <Instagram size={16} /> @mkagropecuaria
           </a>
           <p className="text-xs mt-6" style={{ color: "var(--mk-text-secondary)" }}>
             Empresa que acolhe a comunidade LGBTQ+ · Empreendedoras
