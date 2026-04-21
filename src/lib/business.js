@@ -60,14 +60,14 @@ export const SERVICES = [
 ];
 
 export const PRODUCTS = [
-  { name: "Ração Premium para Cães", category: "Pet", price: "A partir de R$ 89,90", image: "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=800" },
-  { name: "Areia Higiênica para Gatos", category: "Pet", price: "A partir de R$ 29,90", image: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=800" },
-  { name: "Brinquedos e Mordedores", category: "Pet", price: "A partir de R$ 19,90", image: "https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=800" },
+  { name: "Ração Premium para Cães", category: "Pet", price: "A partir de R$ X", image: "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=800" },
+  { name: "Areia Higiênica para Gatos", category: "Pet", price: "A partir de R$ X", image: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=800" },
+  { name: "Brinquedos e Mordedores", category: "Pet", price: "A partir de R$ X", image: "https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=800" },
   { name: "Sementes de Pastagem", category: "Agro", price: "Consulte-nos", image: "https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg" },
   { name: "Adubos e Fertilizantes", category: "Agro", price: "Consulte-nos", image: "https://images.pexels.com/photos/2893635/pexels-photo-2893635.jpeg" },
   { name: "Suplementos para Gado", category: "Agro", price: "Consulte-nos", image: "https://images.pexels.com/photos/422218/pexels-photo-422218.jpeg" },
-  { name: "Camas e Caminhas", category: "Pet", price: "A partir de R$ 59,90", image: "https://images.unsplash.com/photo-1601758174114-e5c33c9d0929?auto=format&fit=crop&w=800" },
-  { name: "Kit Banho & Tosa em Casa", category: "Pet", price: "A partir de R$ 39,90", image: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800" },
+  { name: "Camas e Caminhas", category: "Pet", price: "A partir de R$ X", image: "https://images.unsplash.com/photo-1601758174114-e5c33c9d0929?auto=format&fit=crop&w=800" },
+  { name: "Kit Banho & Tosa em Casa", category: "Pet", price: "A partir de R$ X", image: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800" },
 ];
 
 export const REVIEWS = [
