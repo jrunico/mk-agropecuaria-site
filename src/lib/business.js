@@ -18,7 +18,7 @@ export const BUSINESS = {
   ],
   mapEmbed: "https://www.google.com/maps?q=R.+Bento+Ribeiro,+1177+-+Nova+R%C3%BAssia,+Ponta+Grossa+-+PR&output=embed",
   googleReviewsUrl: "https://www.google.com/maps/place/Mk+Agropecuaria+e+Pet+Shop",
-  instagram: "https://linkr.bio",
+  instagram: "https://www.instagram.com/mkagropet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
 };
 
 export const whatsappLink = (text = "Olá! Vim pelo site da MK Agropecuária e gostaria de mais informações.") =>
